@@ -6,7 +6,8 @@ let path = require("path");
 // Sets up the Express App
 // =============================================================
 let app = express();
-let PORT = 5000;
+let PORT = process.env.PORT || 5000;
+console.log (PORT);
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
