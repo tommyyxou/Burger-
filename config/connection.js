@@ -4,26 +4,23 @@ let mysql = require("mysql");
 require('dotenv').config()
 
 // Set the port of our application
-// process.env.PORT lets the port be set by Heroku
-let PORT = process.env.PORT || 8080;
-
 
 // MySQL DB Connection Information (remember to change this with our specific credentials)
 if (process.env.CLEARDB_DATABASE_URL) {
     connection = mysql.createConnection({
-        host: 'us-cdbr-iron-east-02.cleardb.net',
-        port: 3306,
-        user: "b2c8985c6e27a5",
-        password: "ec1799e7",
-        database: "heroku_d807133fc14176e"
+        host: process.env.host,
+        port: process.env.port,
+        user: process.env.user,
+        password: process.env.password,
+        database: process.env.database
         });
    // mysql://b2c8985c6e27a5:ec1799e7@us-cdbr-iron-east-02.cleardb.net/heroku_d807133fc14176e?reconnect=true
 } else {
     connection = mysql.createConnection({
         host: 'localhost',
         port: 3306,
-        user: process.env.WEBSITE_USER,
-        password: process.env.WEBSITE_PASSWORD,
+        user: "",
+        password: "",
         database: "burgers_db"
         });
 }
