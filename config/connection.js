@@ -10,7 +10,14 @@ let PORT = process.env.PORT || 8080;
 
 // MySQL DB Connection Information (remember to change this with our specific credentials)
 if (process.env.CLEARDB_DATABASE_URL) {
-    connection = mysql.createConnection(process.env.CLEARDB_DATABASE_URL);
+    connection = mysql.createConnection({
+        host: 'us-cdbr-iron-east-02.cleardb.net',
+        port: 3306,
+        user: b2c8985c6e27a5,
+        password: ec1799e7,
+        database: "heroku_d807133fc14176e"
+        });
+   // mysql://b2c8985c6e27a5:ec1799e7@us-cdbr-iron-east-02.cleardb.net/heroku_d807133fc14176e?reconnect=true
 } else {
     connection = mysql.createConnection({
         host: 'localhost',
