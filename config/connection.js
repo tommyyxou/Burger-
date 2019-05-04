@@ -21,8 +21,8 @@ if (process.env.CLEARDB_DATABASE_URL) {
     connection = mysql.createConnection({
         host: 'localhost',
         port: 3306,
-        user: "",
-        password: "",
+        user: "webuser",
+        password: "secretPassword",
         database: "burgers_db"
         });
 }
