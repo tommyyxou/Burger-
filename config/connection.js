@@ -10,10 +10,10 @@ if (process.env.CLEARDB_DATABASE_URL) {
     console.log ("------")
     console.log (process.env)
     connection = mysql.createConnection({
-        host: "us-cdbr-iron-east-02.cleardb.net",
+        host: process.env.host,
         port: 3306,
         user: "b2c8985c6e27a5",
-        password: "ec1799e7",
+        password: process.env.password,
         database: "heroku_d807133fc14176e"
         });
    // mysql://b2c8985c6e27a5:ec1799e7@us-cdbr-iron-east-02.cleardb.net/heroku_d807133fc14176e?reconnect=true
