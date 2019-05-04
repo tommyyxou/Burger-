@@ -2,7 +2,7 @@
 CREATE DATABASE burgers_db;
 USE burgers_db;
 
--- Created the table "s" 
+-- Created the table "Burgers" 
 CREATE TABLE burgers
 (
   id int AUTO_INCREMENT PRIMARY KEY,
