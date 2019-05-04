@@ -12,7 +12,7 @@ if (process.env.CLEARDB_DATABASE_URL) {
     connection = mysql.createConnection({
         host: process.env.host,
         port: 3306,
-        user: process.env.user,
+        user: "b2c8985c6e27a5",
         password: process.env.password,
         database: "heroku_d807133fc14176e"
         });
