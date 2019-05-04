@@ -14,7 +14,7 @@ if (process.env.CLEARDB_DATABASE_URL) {
         port: 3306,
         user: process.env.user,
         password: process.env.password,
-        database: process.env.database
+        database: "heroku_d807133fc14176e"
         });
    // mysql://b2c8985c6e27a5:ec1799e7@us-cdbr-iron-east-02.cleardb.net/heroku_d807133fc14176e?reconnect=true
 } else {
