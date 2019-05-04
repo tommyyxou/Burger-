@@ -12,9 +12,9 @@ if (process.env.CLEARDB_DATABASE_URL) {
     connection = mysql.createConnection({
         host: process.env.host,
         port: 3306,
-        user: "b2c8985c6e27a5",
+        user: process.env.user,
         password: process.env.password,
-        database: "heroku_d807133fc14176e"
+        database: process.env.database
         });
    // mysql://b2c8985c6e27a5:ec1799e7@us-cdbr-iron-east-02.cleardb.net/heroku_d807133fc14176e?reconnect=true
 } else {
