@@ -11,7 +11,7 @@ Feel free to slack me if you would like to test the Application using the Heroku
 
 # Application Functions
 
-## the Application will display two column of burgers. The left column will display burgers ready to be devoured, the right column will display historical burgers from the past after beening devoured. 
+1.  The Application will display two column of burgers. The left column will display burgers ready to be devoured, the right column will       display historical burgers from the past after beening devoured. 
 
-## At the button of the page. there is Text input for entering new burgers to the list.
+2.  At the button of the page. there is Text input for entering new burgers to the list.
 
